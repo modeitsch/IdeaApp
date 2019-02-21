@@ -1,0 +1,30 @@
+{{#each errors}}
+<div class="alert alert alert-warning alert-dismissible fase show" role="alert">
+{{text}}
+<button type="button" class="close"data-dismiss='alert' aria-label="close">
+    <span aria-hidden='true'>&times;</span>
+</button>
+</div>
+{{else}}
+{{/each}}
+
+<div class="card card-body text-center">
+<h1>Add People</h1>
+<form  action="/ideas" method="POST">
+<div class="form-group">
+    <p>Title</p>
+<input type="text" name="title" >
+</div>
+<div class="form-group">
+    <p>Details</p>
+<textarea type="form-control" name="details" rows="5"></textarea>
+</div>
+<button type="submit"class='btn btn-outline-primary'>Submit</button>
+</form>
+
+
+
+
+
+
+</div>
